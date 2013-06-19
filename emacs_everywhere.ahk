@@ -96,7 +96,7 @@ FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
         Send, ^k
         return "stop"
       }
-      if( emacskey = "^s" OR emacskey = "^r" OR emacsKey = "^x^s" OR emacsKey = "^xu" ){
+      if( emacskey = "^s" OR emacskey = "^r" OR emacsKey = "^x^s" OR emacsKey = "^xu" OR emacsKey = "^x^x"){
         Send, %emacskey%
         return "stop"
       }
@@ -300,36 +300,49 @@ $^r::SendCommand("^r","{Shift}+{F3}") ;reverse
 ; File Handling Commands CTRL+X
 ;=====
 $^x::
-  Suspend ; other hotkeys such as ^s from being queued http://l.autohotkey.net/docs/misc/Threads.htm
+  Suspend, On ; other hotkeys such as ^s from being queued http://l.autohotkey.net/docs/misc/Threads.htm
   Critical ; and don't interrupt (suspend) the current thread's execution
     
-  Input, SecondStroke, L1 M
-  Transform, AsciiStroke, Asc, %SecondStroke%
+  Input, RawInput, L1 M
+  Transform, AsciiCode, Asc, %RawInput%
   
+  ;MsgBox RawInput: %RawInput%
+  ;MsgBox AsciiCode: %AsciiCode%
   ;KeyHistory
-  ;MsgBox %A_PriorKey%
-  ;MsgBox %SecondStroke%
-  ;MsgBox %AsciiStroke%
+    
+  if( AsciiCode <= 26 ){
+    ; Check if Control+Letter, if so, boost to ascii letter.
+    AsciiCode += 96
+    Transform, CtrlLetter, Chr, %AsciiCode%
+    Stroke = ^%CtrlLetter%
+  }
+  else{
+    Stroke = %RawInput%
+  }
   
+          
   ; C-g		keyboard-quit		Stop current command Now!
-  if( AsciiStroke = 7 ){
+  if( Stroke = "^g" ){
       Suspend, Off
       return
   }
   
-  ; C-x C-s: save-buffer,	Save the current buffer.
-  if( AsciiStroke = 19 ){
+  if( Stroke = "^s" ){
+  
+      ; C-x C-s: save-buffer,	Save the current buffer.
       SendCommand("^x^s", "^s")
-  }
+      
+  } else if( Stroke = "^c" ){
   
-  ; C-x C-c: save-buffers-kill-emacs, Save all open buffers and get out of emacs.
-  if( AsciiStroke = 3 ){
+      ; C-x C-c: save-buffers-kill-emacs, Save all open buffers and get out of emacs.
       SendCommand("^x^c", "!{F4}" )
+      
   }
-  
-  ;else pass along the emacs key
-  emacsKey = ^x%SecondStroke%
-  SendCommand(emacsKey, emacsKey)
+  else{  
+      ;else pass along the emacs key
+      emacsKey = ^x%Stroke%
+      SendCommand(emacsKey, emacsKey)
+  }
   
   Suspend, Off
   
