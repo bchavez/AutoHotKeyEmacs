@@ -308,9 +308,14 @@ $^x::
   
   ;KeyHistory
   ;MsgBox %A_PriorKey%
-
   ;MsgBox %SecondStroke%
   ;MsgBox %AsciiStroke%
+  
+  ; C-g		keyboard-quit		Stop current command Now!
+  if( AsciiStroke = 7 ){
+      Suspend, Off
+      return
+  }
   
   ; C-x C-s: save-buffer,	Save the current buffer.
   if( AsciiStroke = 19 ){
@@ -322,6 +327,7 @@ $^x::
       SendCommand("^x^c", "!{F4}" )
   }
   
+  ;else pass along the emacs key
   emacsKey = ^x%SecondStroke%
   SendCommand(emacsKey, emacsKey)
   
