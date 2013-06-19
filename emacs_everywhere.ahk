@@ -13,7 +13,6 @@
 ;==========================
 ;Initialise
 ;==========================
-
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
@@ -295,13 +294,19 @@ $^r::SendCommand("^r","{Shift}+{F3}") ;reverse
 ; File Handling Commands CTRL+X
 ;=====
 $^x::
+  Suspend ; other hotkeys such as ^s from being queued http://l.autohotkey.net/docs/misc/Threads.htm
+  Critical ; and don't interrupt (suspend) the current thread's execution
   Input, SecondStroke, L1 M
   Transform, AsciiStroke, Asc, %SecondStroke%
+  
+  ;KeyHistory
+  ;MsgBox %A_PriorKey%
+
   ;MsgBox %SecondStroke%
   ;MsgBox %AsciiStroke%
-
+  
   ; C-x C-s: save-buffer,	Save the current buffer.
-  if( AsciiStroke = 6 ){
+  if( AsciiStroke = 19 ){
       SendCommand("^x^s", "^s")
   }
   
@@ -309,6 +314,7 @@ $^x::
   if( AsciiStroke = 3 ){
       SendCommand("^x^c", "!{F4}" )
   }
-   
+  Suspend, Off
+  
 return
 
