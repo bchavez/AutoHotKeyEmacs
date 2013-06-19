@@ -96,7 +96,7 @@ FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
         Send, ^k
         return "stop"
       }
-      if( emacskey = "^s" OR emacskey = "^r" OR emacsKey = "^x^s" ){
+      if( emacskey = "^s" OR emacskey = "^r" OR emacsKey = "^x^s" OR emacsKey = "^xu" ){
         Send, %emacskey%
         return "stop"
       }
@@ -140,9 +140,9 @@ SendCommand(emacsKey, translationToWindowsKeystrokes, secondWindowsKeystroke="")
     }
   
   if (IsInEmacsMode AND processkey = "ok") {
-    Send, %translationToWindowsKeystrokes%
+       Send, %translationToWindowsKeystrokes%
     if (secondWindowsKeystroke<>"") {
-      Send, %secondWindowsKeystroke%
+       Send, %secondWindowsKeystroke%
     }
   } else if( processkey = "ok") {
      ;MsgBox "passthru"
@@ -321,6 +321,10 @@ $^x::
   if( AsciiStroke = 3 ){
       SendCommand("^x^c", "!{F4}" )
   }
+  
+  emacsKey = ^x%SecondStroke%
+  SendCommand(emacsKey, emacsKey)
+  
   Suspend, Off
   
 return
