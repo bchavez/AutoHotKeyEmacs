@@ -75,6 +75,12 @@ FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
         
    }
    
+   if WinActive("ahk_exe cmd.exe") {
+      if( emacskey = "^x^c"){
+          WinClose, A
+          return "stop"
+      }
+   }
    
    if WinActive("ahk_class Chrome_WidgetWin_1"){
       if( emacskey = "^s")
