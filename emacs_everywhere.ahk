@@ -96,7 +96,7 @@ FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
         Send, ^k
         return "stop"
       }
-      if( emacskey = "^s" OR emacskey = "^r" ){
+      if( emacskey = "^s" OR emacskey = "^r" OR emacsKey = "^x^s" ){
         Send, %emacskey%
         return "stop"
       }
@@ -302,6 +302,7 @@ $^r::SendCommand("^r","{Shift}+{F3}") ;reverse
 $^x::
   Suspend ; other hotkeys such as ^s from being queued http://l.autohotkey.net/docs/misc/Threads.htm
   Critical ; and don't interrupt (suspend) the current thread's execution
+    
   Input, SecondStroke, L1 M
   Transform, AsciiStroke, Asc, %SecondStroke%
   
