@@ -49,12 +49,7 @@ FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
       }
    }
    
-   if WinActive("ahk_class Notepad2U"){
-      if( emacskey = "^s")
-        stroke1 = ^f
-      if( emacskey = "^r")
-        stroke1 = ^f
-   }
+
    
    if WinActive("ahk_class MozillaUIWindowClass"){
       if( emacskey = "^s")
@@ -72,7 +67,11 @@ FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
           ControlClick, Find &Previous, Find Text
           return "stop"
       }
-        
+   } else if WinActive("ahk_exe Notepad2.exe"){
+      if( emacskey = "^s")
+        stroke1 = ^f
+      if( emacskey = "^r")
+        stroke1 = ^f
    }
    
    if WinActive("ahk_exe cmd.exe") {
