@@ -49,8 +49,6 @@ FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
       }
    }
    
-
-   
    if WinActive("ahk_class MozillaUIWindowClass"){
       if( emacskey = "^s")
         stroke1 = ^f
@@ -318,7 +316,8 @@ $^x::
   else{
     Stroke = %RawInput%
   }
-  
+
+  SetSelectMode(false)  
           
   ; C-g		keyboard-quit		Stop current command Now!
   if( Stroke = "^g" ){
