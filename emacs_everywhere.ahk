@@ -88,7 +88,7 @@ FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
    
    
    SetTitleMatchMode 2
-   if WinActive("Microsoft Visual Studio") {
+   if WinActive("ahk_exe devenv.exe") {
       if( emacsKey = "^k" ){
         Send, ^k
         return "stop"
