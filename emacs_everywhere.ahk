@@ -15,6 +15,11 @@
 ;==========================
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 
+;Disable Emacs Keys for the following programs:
+#IfWinNotActive
+#IfWinNotActive ahk_exe mintty.exe
+;#IfWinNotActive ahk_exe rider64.exe
+
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
@@ -28,16 +33,23 @@ SetSelectMode(false)
 
 FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
    SetTitleMatchMode 2 ; match start with
-   
-   if WinActive("ahk_exe mintty.exe")
+
+   if WinActive("ahk_exe notepad++.exe")
    {
-      ; MsgBox emackskey:'%emacskey%'
-      if ( emacskey = "^k" ) 
-      {
-          ;MsgBox "foo"
+       if( emacskey = "^s"){
+          Send, ^!i
+          return "stop"
+       }
+   
+   }
+   
+   if WinActive("ahk_exe idea.exe")
+   {
+       if( emacskey = "^k"){
           Send, ^k
           return "stop"
-      }
+       }
+   
    }
    
    if WinActive("ahk_class AcrobatSDIWindow"){
@@ -53,7 +65,7 @@ FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
       if( emacskey = "^s")
         stroke1 = ^f
       if( emacskey = "^r")
-        stroke1 = {Shift}+{F3}
+        stroke1 = ^f
    }
    
    if WinActive("ahk_exe Notepad2.exe") AND WinActive("Find Text") {
@@ -81,7 +93,7 @@ FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
    
    if WinActive("ahk_class Chrome_WidgetWin_1"){
       if( emacskey = "^s")
-        stroke1 = {F3}
+        stroke1 = ^f
       if( emacskey = "^r")
         stroke1 = {SHIFTDOWN}{F3}{SHIFTUP}
    }
@@ -89,6 +101,17 @@ FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
    
    SetTitleMatchMode 2
    if WinActive("ahk_exe devenv.exe") {
+      if( emacsKey = "^k" ){
+        Send, ^k
+        return "stop"
+      }
+      if( emacskey = "^s" OR emacskey = "^r" OR emacsKey = "^x^s" OR emacsKey = "^xu" OR emacsKey = "^x^x"){
+        Send, %emacskey%
+        return "stop"
+      }
+   }
+   
+      if WinActive("ahk_exe rider64.exe") {
       if( emacsKey = "^k" ){
         Send, ^k
         return "stop"
@@ -170,11 +193,15 @@ GetSelectedText()
 
   SetEmacsMode(!IsInEmacsMode)
 
-
 $^Space::
   SetSelectMode(!IsInSelectMode)
 return
-  
+
+$^9::
+  SetSelectMode(false)
+  SendCommand("^9","^9")
+return
+
 $^g::
   if( !IsInSelectMode ){
      IfWinActive ahk_class MUSHYBAR
