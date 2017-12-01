@@ -13,13 +13,13 @@
 ;==========================
 ;Initialise
 ;==========================
+; no env creates problems with rider64.exe
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 
 ;Disable Emacs Keys for the following programs:
-#IfWinNotActive
 #IfWinNotActive ahk_exe mintty.exe
-;#IfWinNotActive ahk_exe rider64.exe
 
+  
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
@@ -28,7 +28,7 @@ disabledIcon := "emacs_everywhere_disabled_16.ico"
 IsInEmacsMode := false
 IsInSelectMode := false
 
-SetEmacsMode(false)
+SetEmacsMode(true)
 SetSelectMode(false)
 
 FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
@@ -97,6 +97,17 @@ FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
       if( emacskey = "^r")
         stroke1 = {SHIFTDOWN}{F3}{SHIFTUP}
    }
+
+   if WinActive("ahk_exe rider64.exe") {
+      if( emacskey = "^k"){
+          Send, ^k
+          return "stop"
+      }
+      if( emacskey = "^s"){
+          Send, %emacskey%
+          return "stop"
+      }
+   }
    
    
    SetTitleMatchMode 2
@@ -110,18 +121,7 @@ FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
         return "stop"
       }
    }
-   
-      if WinActive("ahk_exe rider64.exe") {
-      if( emacsKey = "^k" ){
-        Send, ^k
-        return "stop"
-      }
-      if( emacskey = "^s" OR emacskey = "^r" OR emacsKey = "^x^s" OR emacsKey = "^xu" OR emacsKey = "^x^x"){
-        Send, %emacskey%
-        return "stop"
-      }
-   }
-   
+     
    return "ok"
 }
 
@@ -142,32 +142,37 @@ SetEmacsMode(toActive) {
 SetSelectMode(toActive){
   global IsInSelectMode
   IsInSelectMode := toActive
-  ;MsgBox % IsInSelectMode
+  OutputDebug, "SELECT MODE: " %toActive%
 }
 
 SendCommand(emacsKey, translationToWindowsKeystrokes, secondWindowsKeystroke="") {
   global IsInEmacsMode
   global IsInSelectMode
+
+  OutputDebug, "SendCommand()"
   
   if(IsInSelectMode){
      translationToWindowsKeystrokes := "+" . translationToWindowsKeystrokes
-     ;MsgBox %translationToWindowsKeystrokes%
   }
-  
+    
     processkey := FilterApps( emacsKey, translationToWindowsKeystrokes, secondWindowsKeystroke )
     if( emacsKey = "" OR processkey = "stop" ){
+        OutputDebug, "emacs key = '' or process key STOP"
         return
     }
   
   if (IsInEmacsMode AND processkey = "ok") {
+       OutputDebug, "InEmacsMode and process key = OK"
        Send, %translationToWindowsKeystrokes%
     if (secondWindowsKeystroke<>"") {
+       OutputDebug, "Send second windows KeyStroke"
        Send, %secondWindowsKeystroke%
     }
   } else if( processkey = "ok") {
-     ;MsgBox "passthru"
+    OutputDebug, "Just process key OK."
     Send, %emacsKey% ;passthrough original keystroke
   }
+  OutputDebug, "SendCommand() DONE"
   return
 }
 
@@ -190,8 +195,7 @@ GetSelectedText()
 ;Emacs mode toggle
 ;==========================
 
-
-  SetEmacsMode(!IsInEmacsMode)
+;SetEmacsMode(!IsInEmacsMode)
 
 $^Space::
   SetSelectMode(!IsInSelectMode)
@@ -208,15 +212,14 @@ $^g::
      {
         Send, !{F4}
      }
-     Else
-     {
-        Send, {Esc}
-     }
    }
   else{
     SetSelectMode(false)
   }
+  OutputDebug, "ESC"
+  Send, {Esc}
 return
+
 ~$^c::
   SetSelectMode(false)
 return
@@ -259,8 +262,11 @@ $^e::SendCommand("^e","{End}")
 ;==========================
 
 ;Ctrl-V disabled. Too reliant on that for pasting :$
+#IfWinNotActive ahk_exe rider64.exe
 $!n::SendCommand("^v","{PgDn}")
 $!p::SendCommand("!v","{PgUp}")
+#IfWinNotActive
+
 
 $!<::SendCommand("!<","^{Home}")
 
