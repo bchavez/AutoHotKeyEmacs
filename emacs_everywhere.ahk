@@ -104,7 +104,7 @@ FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
           return "stop"
       }
       if( emacskey = "^s"){
-          Send, %emacskey%
+          Send, ^f
           return "stop"
       }
    }
