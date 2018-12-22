@@ -108,6 +108,22 @@ FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
           return "stop"
       }
    }
+   if WinActive("ahk_exe idea64.exe") {
+      if( emacskey = "^k"){
+          Send, ^k
+          return "stop"
+      }
+      if( emacskey = "^s"){
+          Send, ^f
+          return "stop"
+      }
+   }
+   if WinActive("ahk_exe LINQPad.exe") {
+      if( emacsKey = "^x^x"){
+        Send, ^x
+        return "stop"
+      }
+   }
    
    
    SetTitleMatchMode 2

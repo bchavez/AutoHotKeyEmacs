@@ -1,12 +1,14 @@
-## AutoHotkey Emacs key bindings for Windows
+## AutoHotkey Emacs Key Bindings for Windows
 
-This is my AutoHotkey script that gives Emacs key bindings for windows that is Visual Studio 2012 friendly.
+This is my **AutoHotkey** script that gives Emacs key bindings for the **Windows OS**. Also, one that is **Visual Studio** friendly.
 
-###How to use
+## How to use
+
+#### Startup Configuration
 
 Create a shortcut to **emacs_everywhere.ahk** and place it in your Windows start up folder. Be sure to add the **\*.ico** icons in where you place the **.ahk** script.
 
-Use the **FilterApps** function to do some per-filtering for special mappings that need to be made to emulate Emacs.
+Use the **FilterApps** function to do some per-filtering for special re-mappings that need to be made to emulate Emacs.
 
 Here's an example:
 
@@ -41,10 +43,12 @@ FilterApps(ByRef emacskey, ByRef stroke1, ByRef stroke2){
 }
 ```
 
+#### Import Visual Studio keyboard settings
+Next, import the `Keyboard` settings from one of the latest `*.vssettings` file in this repo.
 
+If all goes well, you should have Emacs keybindings everywhere in the **Windows OS**, including **Chrome**, **Notepad** and **Visual Studio**. 
 
-
-### License
+## License
 
 Do what you want. I think I downloaded it somewhere on the internet, but I modified it to better suit my needs. If it kills your cat, melts your ice cream, or accidentally sends emails to your boss; don't blame me.
 
