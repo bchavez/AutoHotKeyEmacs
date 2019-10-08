@@ -1,0 +1,163 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontFamily": "Courier New",
+    "editor.tabSize": 3,
+    "workbench.colorCustomizations": {
+       "editor.background": "#313132",
+       "editor.foreground": "#DFDFC0",
+       "editorLineNumber.foreground": "#EAAF00",
+       "editorLineNumber.activeForeground": "#ffdd79",
+       "editor.lineHighlightBorder": "#343434",
+       "editor.lineHighlightBackground": "#343434",
+       "editorGutter.modifiedBackground": "#f1bc5ace",
+       "editorGutter.addedBackground": "#788E68",
+       "editorGutter.background": "#373737",
+       "editorOverviewRuler.addedForeground": "#788e68",
+       "editorOverviewRuler.modifiedForeground": "#f1bc5ace",
+       "editorOverviewRuler.deletedForeground": "#810000"
+    },
+    "editor.tokenColorCustomizations": {
+       "functions": "#D7C0C0",
+       "keywords": "#5B8A86",
+       "numbers": "#8FCED1",
+       "strings": "#D1D1D1",
+       "types": "#B8CED3",
+       "comments": "#7A987A",
+       "variables": "#DFDFC1",
+       "textMateRules": [
+          {
+             "scope": "keyword.operator",
+             "settings": {
+                "foreground": "#C9B68F"
+             }
+          },
+          {
+             "scope": "comment.block.documentation",
+             "settings": {
+                "foreground": "#A4A4A4"
+             }
+          },
+          {
+             "scope": "string.interpolated",
+             "settings": {
+                "foreground": "#ff0000"
+             }
+          },
+          {
+             "scope": [
+                "keyword",
+                "storage.modifier",
+                "constant.language",
+                "variable.language.this",
+                "keyword.operator.new",
+                "storage.type.class"
+             ],
+             "settings": {
+                "foreground": "#5B8A86",
+                "fontStyle": "bold"
+             }
+          },
+          {
+             "scope": [
+                "source.cs comment.block.documentation.cs entity.name.tag.cs entity.name.tag.localname.cs",
+                "source.cs comment.block.documentation.cs punctuation.definition.comment.cs",
+                "keyword.preprocessor",
+                "meta.preprocessor punctuation.separator.hash"
+             ],
+             "settings": {
+                "foreground": "#808080",
+                "fontStyle": ""
+             }
+          },
+          {
+             "scope": [
+                "storage.type"
+             ],
+             "settings": {
+                "foreground": "#B8CED3"
+             }
+          },
+          {
+             "scope": "entity.name.type.namespace",
+             "settings": {
+                "foreground": "#B3A176"
+             }
+          },
+          {
+             "scope": "entity.name.type.interface",
+             "settings": {
+                "foreground": "#D6A47A"
+             }
+          },
+          {
+             "scope": "source.cs comment.block.documentation.cs entity.other.attribute-name.cs entity.other.attribute-name.localname.cs",
+             "settings": {
+                "foreground": "#C8C8C8"
+             }
+          },
+          {
+             "scope": "constant.numeric",
+             "settings": {
+                "fontStyle": "bold"
+             }
+          },
+          {
+             "scope": [
+                "string.interpolated",
+                "punctuation.definition.interpolation"
+             ],
+             "settings": {
+                "foreground": "#DCDCDC"
+             }
+          },
+          {
+             "scope": [
+                "variable.other.object.property",
+                "variable.other.readwrite",
+                "entity.name.variable.property",
+                "entity.name.variable.field"
+             ],
+             "settings": {
+                "foreground": "#A9D19D"
+             }
+          },
+          {
+              "scope": "entity.name.tag",
+              "settings": {
+                  "foreground": "#E1795F"
+              }
+          },
+          {
+               "scope": "entity.other.attribute-name",
+               "settings": {
+                   "foreground": "#CCCC37"
+               }
+          },
+          {
+              "scope": "text.xml string",
+              "settings": {
+                  "foreground": "#DFDFBF"
+              }
+          }
+
+       ]
+    },
+    "editor.accessibilitySupport": "off",
+   "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "csharp.referencesCodeLens.enabled": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.list.openMode": "doubleClick",
+   "innosetup.pathToIscc": "C:\\Program Files (x86)\\Inno Setup 5\\ISCC.exe",
+   "window.zoomLevel": 0,
+   "editor.largeFileOptimizations": false,
+   "markdown.preview.doubleClickToSwitchToEditor": false,
+   "markdown.preview.linkify": false,
+   "markdown.preview.markEditorSelection": false,
+   "markdown.preview.scrollPreviewWithEditor": false,
+   "search.useReplacePreview": false,
+   "workbench.startupEditor": "newUntitledFile",
+   "omnisharp.enableRoslynAnalyzers": true,
+   "razor.trace": "Messages"
+}
