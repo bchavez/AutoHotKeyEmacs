@@ -73,112 +73,8 @@
 	<s:String x:Key="/Default/CodeStyle/Naming/XamlNaming/UserRules/=NAMESPACE_005FALIAS/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
 	<s:String x:Key="/Default/CodeStyle/Naming/XamlNaming/UserRules/=XAML_005FFIELD/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
 	<s:String x:Key="/Default/CodeStyle/Naming/XamlNaming/UserRules/=XAML_005FRESOURCE/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
-	<s:String x:Key="/Default/Connection/XmlConnectionList/@EntryValue">&lt;Configurator&gt;&lt;ConnectList /&gt;&lt;/Configurator&gt;</s:String>
-	<s:Boolean x:Key="/Default/Environment/ExtensionManager/PackageSource/=Brian_002EVisualStudio_002EReSharper_002EFixes/@KeyIndexDefined">True</s:Boolean>
-	<s:String x:Key="/Default/Environment/ExtensionManager/PackageSource/=Brian_002EVisualStudio_002EReSharper_002EFixes/Name/@EntryValue">Brian.VisualStudio.ReSharper.Fixes</s:String>
-	<s:Int64 x:Key="/Default/Environment/ExtensionManager/PackageSource/=Brian_002EVisualStudio_002EReSharper_002EFixes/Order/@EntryValue">1</s:Int64>
-	<s:String x:Key="/Default/Environment/ExtensionManager/PackageSource/=Brian_002EVisualStudio_002EReSharper_002EFixes/Source/@EntryValue">C:\Code\Projects\Brian.VisualStudio.ReSharper.Fixes\Brian.VisualStudio.ReSharper.Fixes</s:String>
-	<s:Boolean x:Key="/Default/Environment/ExternalSources/Decompiler/DecompilerLegalNoticeAccepted/@EntryValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/ExternalSources/PdbNavigation/UseSymbolFiles/@EntryValue">False</s:Boolean>
-	<s:String x:Key="/Default/Environment/ExternalSources/SymbolServer/AssemblyFilter/@EntryValue">All</s:String>
-	<s:Boolean x:Key="/Default/Environment/ExternalSources/SymbolServer/FirstStart/@EntryValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/ExternalSources/SymbolServer/RunningState/@EntryValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/Feedback/ShouldPrompt/@EntryValue">False</s:Boolean>
-	<s:Int64 x:Key="/Default/Environment/General/WorkspaceHostInitializationTimeout/@EntryValue">2000</s:Int64>
-	<s:Boolean x:Key="/Default/Environment/GenerateMru/GroupByType/=Delegating/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/GenerateMru/GroupByType/=Overrides/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/GenerateMru/SortByName/=Overrides/@EntryIndexedValue">True</s:Boolean>
-	<s:Int64 x:Key="/Default/Environment/Hierarchy/Build/SolutionBuilderNext/ParallelProcessesCount2/@EntryValue">1</s:Int64>
-	<s:Int64 x:Key="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue">8</s:Int64>
-	<s:String x:Key="/Default/Environment/ManagedLanguageParameterNameHintsOptions/BlackList/@EntryValue">(begin*, end*)
-(start*, end*)
-(first*, last*)
-(first*, second*)
-(from*, to*)
-(min*, max*)
-(key, value)
-System.Object.Equals
-System.Object.ReferenceEquals
-System.Collections.IEqualityComparer.Equals
-System.Math.*
-System.Text.StringBuilder.*
-System.Linq.Enumerable.*
-System.Linq.Queryable.*
-Newtonsoft.Json.Linq.*
-System.Xml.Linq.*</s:String>
-	<s:Boolean x:Key="/Default/Environment/OpenDocument/OpenDocumentAfterModification/@EntryValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/ParameterNameHintsOptions/ShowParameterNameHints/@EntryValue">False</s:Boolean>
-	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=Antivirus/@EntryIndexedValue">LIVE_MONITOR</s:String>
-	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=AutoRecoverer/@EntryIndexedValue">LIVE_MONITOR</s:String>
-	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=Format/@EntryIndexedValue">LIVE_MONITOR</s:String>
-	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=Roslyn_002Dswea/@EntryIndexedValue">DO_NOTHING</s:String>
-	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=ShowAnnotations/@EntryIndexedValue">LIVE_MONITOR</s:String>
-	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=SolExp_002DTrack/@EntryIndexedValue">LIVE_MONITOR</s:String>
-	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=StartPage_002DIsDownloadRefreshEnabled/@EntryIndexedValue">LIVE_MONITOR</s:String>
-	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=StartPage_002DOnEnvironmentStatup/@EntryIndexedValue">LIVE_MONITOR</s:String>
-	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=SyncSettings/@EntryIndexedValue">LIVE_MONITOR</s:String>
-	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=TextEditor_002DCodeLens/@EntryIndexedValue">LIVE_MONITOR</s:String>
-	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=TextEditor_002DTrackChanges_002D2/@EntryIndexedValue">LIVE_MONITOR</s:String>
-	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=VCS/@EntryIndexedValue">LIVE_MONITOR</s:String>
-	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=VsBulb/@EntryIndexedValue">DO_NOTHING</s:String>
-	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=XAML_0020Designer/@EntryIndexedValue">LIVE_MONITOR</s:String>
-	<s:Int64 x:Key="/Default/Environment/SearchAndNavigation/DefaultOccurrencesGroupingIndices/=JetBrains_002EPsiFeatures_002EUIInteractive_002ERefactorings_002ECommonUI_002ERefactoringWindows_002EWinFormsControls_002EUsagesDescriptor/@EntryIndexedValue">12</s:Int64>
-	<s:Int64 x:Key="/Default/Environment/SearchAndNavigation/DefaultOccurrencesGroupingIndices/=JetBrains_002EReSharper_002EFeature_002EServices_002ENavigation_002EDescriptors_002ESearchUsagesDescriptor/@EntryIndexedValue">12</s:Int64>
-	<s:Int64 x:Key="/Default/Environment/SearchAndNavigation/DefaultOccurrencesGroupingIndices/=JetBrains_002EReSharper_002EFeatures_002ENavigation_002EFeatures_002EGoToDeclaredElement_002EGotoDeclaredElementsBrowserDescriptor/@EntryIndexedValue">12</s:Int64>
-	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpAttributeForSingleLineMethodUpgrade/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpKeepExistingMigration/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpPlaceEmbeddedOnSameLineMigration/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpRenamePlacementToArrangementMigration/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpUseContinuousIndentInsideBracesMigration/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002EAddAccessorOwnerDeclarationBracesMigration/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002ECSharpPlaceAttributeOnSameLineMigration/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002EMigrateBlankLinesAroundFieldToBlankLinesAroundProperty/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002EMigrateThisQualifierSettings/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002EJavaScript_002ECodeStyle_002ESettingsUpgrade_002EJsParsFormattingSettingsUpgrader/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002EJavaScript_002ECodeStyle_002ESettingsUpgrade_002EJsWrapperSettingsUpgrader/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EUnitTestFramework_002ESettings_002EMigrations_002ERemoveBuildPolicyAlwaysMigration/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/TreeGridPresentableViewSearchBox/WasNoticeShown/@EntryValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/UnitTesting/DisabledProviders/=Jasmine/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/UnitTesting/DisabledProviders/=MSTest/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/UnitTesting/DisabledProviders/=QUnit/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/UnitTesting/WrapLongLinesInUnitTestSessionOutput/@EntryValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/UpdatesManger/IsDownloadUpdateDataAllowed/@EntryValue">False</s:Boolean>
-	<s:String x:Key="/Default/Environment/UpdatesManger/LastUpdateCheck/@EntryValue">07/28/2018 10:39:48</s:String>
-	<s:Boolean x:Key="/Default/Environment/UserInterface/HideVsMenus/@EntryValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/UserInterface/OverrideVsRefactorings/@EntryValue">False</s:Boolean>
-	<s:String x:Key="/Default/Environment/UserInterface/ShortcutSchemeName/@EntryValue">VS</s:String>
-	<s:String x:Key="/Default/Environment/UserInterface/ThemedIcon/PsiSymbolIcon/PsiSymbolIconThemeSelection/@EntryValue">SymbolsVs11GrayDark</s:String>
 	<s:String x:Key="/Default/GlobalFilterSettingsManager/AppliedDefaultAttributeFilterString/@EntryValue">System.CodeDom.Compiler.GeneratedCodeAttribute;Microsoft.VisualStudio.TestPlatform.TestSDKAutoGeneratedCode*</s:String>
 	<s:String x:Key="/Default/GlobalFilterSettingsManager/AttributeFilterXml/@EntryValue">&lt;data&gt;&lt;AttributeFilter ClassMask="System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute" IsEnabled="True" /&gt;&lt;AttributeFilter ClassMask="System.CodeDom.Compiler.GeneratedCodeAttribute" IsEnabled="True" /&gt;&lt;AttributeFilter ClassMask="Microsoft.VisualStudio.TestPlatform.TestSDKAutoGeneratedCode*" IsEnabled="True" /&gt;&lt;/data&gt;</s:String>
-	<s:String x:Key="/Default/Housekeeping/AcceptedAgreement/SentAcceptedAgreements/=privacy/@EntryIndexedValue">1.4</s:String>
-	<s:Int64 x:Key="/Default/Housekeeping/ChangesView/HorizontalSplitter/@EntryValue">100</s:Int64>
-	<s:Boolean x:Key="/Default/Housekeeping/ExtensionManager/IncludePrereleasePackages/@EntryValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=AutoNamingFeatureSuggester/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=AutoStackTraceExplorerExplainer/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=EditorConfigFeatureSuggester/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=GotoSuggester/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=TabNavigationExplainer/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue">True</s:Boolean>
-	<s:String x:Key="/Default/Housekeeping/Layout/DialogWindows/OpenFromGacDialog/Position/@EntryValue">[170,73](640,480)</s:String>
-	<s:String x:Key="/Default/Housekeeping/Layout/DialogWindows/OpenFromNuGetPackagesCacheDialog/Position/@EntryValue">[170,73](640,480)</s:String>
-	<s:String x:Key="/Default/Housekeeping/Layout/DialogWindows/OptionsDialogView/Position/@EntryValue">[1969,-133](1028,913)</s:String>
-	<s:String x:Key="/Default/Housekeeping/Layout/DialogWindows/OwnedDialogPosition/Position/=ShortcutBrowser_002EPopupWindow/@EntryIndexedValue">[0,0](640,480)</s:String>
-	<s:String x:Key="/Default/Housekeeping/Layout/DialogWindows/RefactoringWizardWindow/Location/@EntryValue">473,142</s:String>
-	<s:String x:Key="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue">ExternalSources</s:String>
-	<s:Boolean x:Key="/Default/Housekeeping/RefactoringsMru/UseInline/@EntryValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/Housekeeping/RefactoringsMru/RenameRefactoring/DoSearchForDynamics/@EntryValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistence/IsPreviewVisible/=ContinuousTestingSessionDescriptor/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistence/IsPreviewVisible/=UnitTestSessionDescriptor/@EntryIndexedValue">True</s:Boolean>
-	<s:String x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistence/PreviewOrientation/=UnitTestSessionDescriptor/@EntryIndexedValue">Vertical</s:String>
-	<s:Double x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistence/PreviewSplitterHorizontalProportion/=ContinuousTestingSessionDescriptor/@EntryIndexedValue">1</s:Double>
-	<s:Double x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistence/PreviewSplitterHorizontalProportion/=UnitTestSessionDescriptor/@EntryIndexedValue">1</s:Double>
-	<s:Double x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistence/PreviewSplitterVerticalProportion/=ContinuousTestingSessionDescriptor/@EntryIndexedValue">1</s:Double>
-	<s:Double x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistence/PreviewSplitterVerticalProportion/=UnitTestSessionDescriptor/@EntryIndexedValue">1.4163064976924804</s:Double>
-	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionDefault/AutoScrollOutput/@EntryValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Housekeeping/UpgradeFromExceptionReport/UpgradePerformed/@EntryValue">True</s:Boolean>
-	<s:String x:Key="/Default/Housekeeping/WhatsNewShown/WhatsNewShownIndexedEntry/=RC/@EntryIndexedValue">2019.2</s:String>
-	<s:String x:Key="/Default/Housekeeping/WhatsNewShown/WhatsNewShownIndexedEntry/=RS/@EntryIndexedValue">2019.2</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=577D5B2291AFA34487B59DFA81A5380E/@KeyIndexDefined">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=577D5B2291AFA34487B59DFA81A5380E/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=577D5B2291AFA34487B59DFA81A5380E/Applicability/=Surround/@EntryIndexedValue">True</s:Boolean>
@@ -283,11 +179,4 @@ System.Xml.Linq.*</s:String>
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E8F7B99E38B8BE419488824672BB31D5/Field/=Test/Order/@EntryValue">0</s:Int64>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E8F7B99E38B8BE419488824672BB31D5/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E8F7B99E38B8BE419488824672BB31D5/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
-	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E8F7B99E38B8BE419488824672BB31D5/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
-	<s:String x:Key="/Default/SnapshotsStore/CurrentStore/@EntryValue">C:\Users\Cowboy\AppData\Local\JetBrains\Shared\vAny\Sessions</s:String>
-	<s:String x:Key="/Default/SubsystemManager/Xml/@EntryValue">&lt;data&gt;&lt;SubsystemConfiguration&gt;&lt;Subsystems&gt;&lt;Subsystem DisplayName="Wait" Color="#FFC0C0C0"&gt;&lt;Rules&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="System.Threading.Monitor.Wait" /&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="System.Threading.Thread.Sleep" /&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="System.Threading.Monitor" /&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="System.Threading.WaitHandle" /&gt;&lt;/Rules&gt;&lt;/Subsystem&gt;&lt;Subsystem DisplayName="WPF" Color="#FF6A5ACD"&gt;&lt;Rules&gt;&lt;Rule AssemblyTemplate="WindowsBase" NamespaceTemplate="" /&gt;&lt;Rule AssemblyTemplate="PresentationCore" NamespaceTemplate="" /&gt;&lt;Rule AssemblyTemplate="PresentationFramework" NamespaceTemplate="" /&gt;&lt;/Rules&gt;&lt;/Subsystem&gt;&lt;Subsystem DisplayName="System.IO" Color="#FF2E8B57"&gt;&lt;Rules&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="System.IO" /&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="Microsoft.Win32.Win32Native.ReadFile" /&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="Microsoft.Win32.Win32Native.SetFilePointer" /&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="Microsoft.Win32.Win32Native.CloseHandle" /&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="Microsoft.Win32.Win32Native.CreateFile" /&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="Microsoft.Win32.Win32Native.FindFirstFile" /&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="Microsoft.Win32.Win32Native.FindNextFile" /&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="Microsoft.Win32.Win32Native.FindClose" /&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="Microsoft.Win32.Win32Native.GetFileAttributes" /&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="Microsoft.Win32.Win32Native.GetFullPathName" /&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="Microsoft.Win32.Win32Native.WriteFile" /&gt;&lt;/Rules&gt;&lt;/Subsystem&gt;&lt;Subsystem DisplayName="String" Color="#FF6B8E23"&gt;&lt;Rules&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="System.Text" /&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="System.String" /&gt;&lt;/Rules&gt;&lt;/Subsystem&gt;&lt;Subsystem DisplayName="WinForms" Color="#FF4169E1"&gt;&lt;Rules&gt;&lt;Rule AssemblyTemplate="System.Windows.Forms" NamespaceTemplate="" /&gt;&lt;/Rules&gt;&lt;/Subsystem&gt;&lt;Subsystem DisplayName="Linq" Color="#FF3CB371"&gt;&lt;Rules&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="System.Linq." /&gt;&lt;/Rules&gt;&lt;/Subsystem&gt;&lt;Subsystem DisplayName="Collections" Color="#FF9ACD32"&gt;&lt;Rules&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="System.Collections" /&gt;&lt;/Rules&gt;&lt;/Subsystem&gt;&lt;Subsystem DisplayName="Remoting" Color="#FFFF0000"&gt;&lt;Rules&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="System.Runtime.Remoting" /&gt;&lt;/Rules&gt;&lt;/Subsystem&gt;&lt;Subsystem DisplayName="Reflection" Color="#FFFF6347"&gt;&lt;Rules&gt;&lt;Rule AssemblyTemplate="" NamespaceTemplate="System.Reflection" /&gt;&lt;/Rules&gt;&lt;/Subsystem&gt;&lt;/Subsystems&gt;&lt;Profiles&gt;&lt;Profile ProfileName="Default" SubsystemCount="9"&gt;&lt;UsedSubsystems&gt;&lt;Subsystem Id="Wait" Enabled="True" DisplayType="0" /&gt;&lt;Subsystem Id="WPF" Enabled="True" DisplayType="0" /&gt;&lt;Subsystem Id="System.IO" Enabled="True" DisplayType="0" /&gt;&lt;Subsystem Id="String" Enabled="True" DisplayType="0" /&gt;&lt;Subsystem Id="WinForms" Enabled="True" DisplayType="0" /&gt;&lt;Subsystem Id="Linq" Enabled="True" DisplayType="0" /&gt;&lt;Subsystem Id="Collections" Enabled="True" DisplayType="0" /&gt;&lt;Subsystem Id="Remoting" Enabled="True" DisplayType="0" /&gt;&lt;Subsystem Id="Reflection" Enabled="True" DisplayType="0" /&gt;&lt;/UsedSubsystems&gt;&lt;/Profile&gt;&lt;/Profiles&gt;&lt;/SubsystemConfiguration&gt;&lt;/data&gt;</s:String>
-	<s:String x:Key="/Default/TeamCityAddin/DotCoverIntegration/CacheHomeDir/@EntryValue">R:\TEMP</s:String>
-	<s:Double x:Key="/Default/TimelineLayout/MethodsPanelHeight/@EntryValue">485</s:Double>
-	<s:Boolean x:Key="/Default/UserDictionary/Words/=Angeles/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/UserDictionary/Words/=Coinbase/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/UserDictionary/Words/=cryptocurrency/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E8F7B99E38B8BE419488824672BB31D5/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String></wpf:ResourceDictionary>
